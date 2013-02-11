@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF068984-A353-4ED0-8E13-3BCA6DAD1454}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Aicl.Calamar.Scripts.Gastos</RootNamespace>
+    <AssemblyName>Aicl.Calamar.Scripts.Gastos</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="Build" command="./j" workingdir="${ProjectDir}" externalConsole="True" pauseExternalConsole="True" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cayita.Javascript">
+      <HintPath>..\..\lib\Cayita.Javascript.dll</HintPath>
+    </Reference>
+    <Reference Include="Aicl.Calamar.Scripts.Modelos">
+      <HintPath>..\Aicl.Calamar.Scripts.Modelos\bin\Debug\Aicl.Calamar.Scripts.Modelos.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>..\..\lib\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Script.jQuery">
+      <HintPath>..\..\lib\Script.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Script.Linq">
+      <HintPath>..\..\lib\Script.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Script.Web">
+      <HintPath>..\..\lib\Script.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="sc">
+      <HintPath>..\..\..\..\saltarelle\lib\sc.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="MainModule.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="j" />
+  </ItemGroup>
+</Project>

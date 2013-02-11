@@ -1,0 +1,20 @@
+/opt/mono/bin/dmcs  /noconfig  -nostdlib \
+"/out:bin/Debug/Aicl.Calamar.Scripts.Modelos.dll" \
+"/define:SALTARELLE" \
+"/debug" \
+"/r:../../lib/Script.Linq.dll" \
+"/r:../../lib/Script.jQuery.dll" \
+"/r:../../lib/Script.Web.dll" \
+"/r:../../lib/mscorlib.dll" \
+/t:library \
+"AssemblyInfo.cs" "Concepto.cs" "Fuente.cs" \
+"Gasto.cs" "Traslado.cs" "PagoCredito.cs" \
+"Ingreso.cs" "BLResponse.cs" \
+"Auth/AuthPermission.cs" "Auth/AuthRole.cs" "Auth/AuthRolePermission.cs" \
+"Auth/AuthRoleUser.cs" "Auth/LoginResponse.cs" \
+"Auth/RolePermission.cs" "Auth/User.cs" "Auth/UserRole.cs" 
+
+
+echo "ready Aicl.Calamar.Scripts.Modelos.dll"
+
+./j

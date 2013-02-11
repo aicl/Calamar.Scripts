@@ -1,0 +1,17 @@
+/opt/mono/bin/sc  \
+"/outscript:bin/Debug/Calamar.Conceptos.js" \
+"/define:JS" \
+"/debug" \
+"/r:../../lib/Script.Linq.dll" \
+"/r:../../lib/Script.jQuery.dll" \
+"/r:../../lib/Script.Web.dll" \
+"/r:../../lib/mscorlib.dll" \
+"/r:../../lib/Cayita.Javascript.dll" \
+"/r:../Aicl.Calamar.Scripts.Modelos/bin/Debug/Aicl.Calamar.Scripts.Modelos.dll" \
+/t:library \
+"MainModule.cs" 
+
+cp bin/Debug/Calamar.Conceptos.js ../../../gh/src/Aicl.Calamar.HostWeb/modules/
+
+echo "ready Calamar.Conceptos.js"
+

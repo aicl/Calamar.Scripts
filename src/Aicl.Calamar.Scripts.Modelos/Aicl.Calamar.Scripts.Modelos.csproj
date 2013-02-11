@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{58219463-D62D-47BD-9676-C0C6489A7226}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Aicl.Calamar.Scripts.Modelos</RootNamespace>
+    <AssemblyName>Aicl.Calamar.Modelos</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="Build" command="./c" workingdir="${ProjectDir}" externalConsole="True" pauseExternalConsole="True" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Concepto.cs" />
+    <Compile Include="Fuente.cs" />
+    <Compile Include="Gasto.cs" />
+    <Compile Include="Traslado.cs" />
+    <Compile Include="PagoCredito.cs" />
+    <Compile Include="Ingreso.cs" />
+    <Compile Include="BLResponse.cs" />
+    <Compile Include="Auth\AuthPermission.cs" />
+    <Compile Include="Auth\AuthRole.cs" />
+    <Compile Include="Auth\AuthRolePermission.cs" />
+    <Compile Include="Auth\AuthRoleUser.cs" />
+    <Compile Include="Auth\LoginResponse.cs" />
+    <Compile Include="Auth\RolePermission.cs" />
+    <Compile Include="Auth\User.cs" />
+    <Compile Include="Auth\UserRole.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="j" />
+    <None Include="c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Auth\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <HintPath>..\..\lib\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Script.jQuery">
+      <HintPath>..\..\lib\Script.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Script.Linq">
+      <HintPath>..\..\lib\Script.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Script.Web">
+      <HintPath>..\..\lib\Script.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

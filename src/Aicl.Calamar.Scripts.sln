@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aicl.Calamar.Scripts.Modelos", "Aicl.Calamar.Scripts.Modelos\Aicl.Calamar.Scripts.Modelos.csproj", "{58219463-D62D-47BD-9676-C0C6489A7226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aicl.Calamar.Scripts.Gastos", "Aicl.Calamar.Scripts.Gastos\Aicl.Calamar.Scripts.Gastos.csproj", "{AF068984-A353-4ED0-8E13-3BCA6DAD1454}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aicl.Calamar.Scripts.ModuloAuth", "Aicl.Calamar.Scripts.ModuloAuth\Aicl.Calamar.Scripts.ModuloAuth.csproj", "{1A6437BA-8990-4DF5-A113-0AA6154DFE33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aicl.Calamar.Scripts.Conceptos", "Aicl.Calamar.Scripts.Conceptos\Aicl.Calamar.Scripts.Conceptos.csproj", "{E1ED340A-49EC-4CE3-B9B2-F74B505B5F3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aicl.Calamar.Scripts.Fuentes", "Aicl.Calamar.Scripts.Fuentes\Aicl.Calamar.Scripts.Fuentes.csproj", "{187A4D33-E06C-46AF-A147-F68A1A16B66F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{187A4D33-E06C-46AF-A147-F68A1A16B66F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{187A4D33-E06C-46AF-A147-F68A1A16B66F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{187A4D33-E06C-46AF-A147-F68A1A16B66F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{187A4D33-E06C-46AF-A147-F68A1A16B66F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A6437BA-8990-4DF5-A113-0AA6154DFE33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A6437BA-8990-4DF5-A113-0AA6154DFE33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A6437BA-8990-4DF5-A113-0AA6154DFE33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A6437BA-8990-4DF5-A113-0AA6154DFE33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58219463-D62D-47BD-9676-C0C6489A7226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58219463-D62D-47BD-9676-C0C6489A7226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58219463-D62D-47BD-9676-C0C6489A7226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58219463-D62D-47BD-9676-C0C6489A7226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF068984-A353-4ED0-8E13-3BCA6DAD1454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF068984-A353-4ED0-8E13-3BCA6DAD1454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF068984-A353-4ED0-8E13-3BCA6DAD1454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF068984-A353-4ED0-8E13-3BCA6DAD1454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1ED340A-49EC-4CE3-B9B2-F74B505B5F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1ED340A-49EC-4CE3-B9B2-F74B505B5F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1ED340A-49EC-4CE3-B9B2-F74B505B5F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1ED340A-49EC-4CE3-B9B2-F74B505B5F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Aicl.Calamar.Scripts.Modelos\Aicl.Calamar.Scripts.Modelos.csproj
+	EndGlobalSection
+EndGlobal
