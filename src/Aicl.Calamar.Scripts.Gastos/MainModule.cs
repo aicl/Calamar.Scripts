@@ -60,7 +60,7 @@ namespace Aicl.Calamar.Scripts.ModuloGastos
 							Div.CreateAlertErrorAfter(SearchDiv.Element(),"Digite una fecha valida");
 							return;
 						}
-						LoadGastos( inputFecha.Value );
+						LoadGastos( inputFecha.Value.ToServerDate() );
 
 					});
 				});
